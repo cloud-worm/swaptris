@@ -23,3 +23,6 @@ Why is it good for me?
 - Good for learning JavaScript: modding SwapTris is simple ande amusing
 
 > Copyright © 2020 Cloud Worm
+- Good for learning JavaScript: modding SwapTris is simple and amusing
+
+> Copyright © 2020 Cloud Worm
