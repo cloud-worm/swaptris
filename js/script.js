@@ -1,21 +1,9 @@
-// --- Notes ---
-// Make tetris
-// Tetris arena is 10x20
-// Canvas is 30x30
-// A bit buggy at the moment
-
-// - TO DO -
-// Create Game Over state
-// Make it look nicer
-// Fix collision issues 
-// - piece rotation between two pieces
-// - switching pieces
-
+/*
+ * Copyright (c) Cloud Worm 2020 
+ */
 
 // --- Setup -----------------------------------------------
 // - Canvas Context -
-var zt = new ZingTouch.Region(document.body);
-
 var cnv = document.getElementById('cnv'), 
     ctx = cnv.getContext('2d');
 ctx.scale(20, 20);
@@ -198,13 +186,11 @@ document.addEventListener('keydown', function(e){
         }
     }
 });
-// Mobile
-var mobile_container = document.getElementsByClassName('canvas-container');
+var mc = new Hammer.Manager(document.getElementsByClassName("canvas-container"));
 
-zt.bind(mobile_container, 'tap', function(e){
-	player.rotate(1);
-}, false);
+mc.add( new Hammer.Swipe({ direction: Hammer.DIRECTION_DOWN, event: "godown" }) );
 
+mc.on("godown", () => {player.hardDrop()});
 // ---------------------------------------------------------
 
 // --- Functions -------------------------------------------
