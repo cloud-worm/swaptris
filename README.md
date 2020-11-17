@@ -20,9 +20,6 @@ Why is it good for me?
 
 - You can just play it as normal Tetris
 - Nice UI
-- Good for learning JavaScript: modding SwapTris is simple ande amusing
-
-> Copyright © 2020 Cloud Worm
 - Good for learning JavaScript: modding SwapTris is simple and amusing
 
-> Copyright © 2020 Cloud Worm
+> Copyright © 2020 Cloud Worm. All rights reserved.
